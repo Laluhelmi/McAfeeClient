@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hilmiproject.omdutz.mcafee.Register">
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:id="@+id/rRegister"
+    tools:context="com.hilmiproject.omdutz.mcafee.Register"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gambarregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:foregroundGravity="center"
+        android:src="@drawable/mcafee10"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"   />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gambarregister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Masukan Data Diri Anda Dengan Benar"
+        android:textColor="@android:color/black"
+        android:textSize="13dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap Sesuai KTP"
+            android:id="@+id/nama"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:maxLength="25"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+    <Spinner
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/jk"
+        android:layout_below="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout4"
+        android:layout_below="@+id/jk">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:inputType="textEmailAddress"
+       />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout5"
+        android:layout_below="@+id/layout4">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Handphone"
+            android:id="@+id/HP"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:maxLength="13"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:paddingLeft="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout7"
+        android:textSize="15dp"
+        android:text="Pilih Toko"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/layout5">
+    </TextView>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout10"
+            android:layout_below="@+id/layout7">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:maxLines="1"
+                android:hint="Password"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout11"
+            android:layout_below="@+id/layout10">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ulangpassword"
+                android:hint="Ulangi Password"
+                android:inputType="textPassword"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:maxLines="1"/>
+        </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_marginBottom="10dp"
+        android:enabled="true"
+        android:id="@+id/tombolnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout11"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/enable_color"
+        android:text="Daftar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/total"
+    tools:context="com.hilmiproject.omdutz.mcafee.Fragment.Lokasi">
+<fragment
+    android:layout_width="match_parent"
+    android:id="@+id/map"
+    tools:context=".MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_height="match_parent">
+</fragment>
+<LinearLayout
+    android:orientation="vertical"
+    android:elevation="40dp"
+    android:clipToPadding="false"
+    android:padding="5dp"
+    android:background="#80ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/pilihkota"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/kota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kota"
+            />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dowarron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pilihtoko"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tokodipilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Toko"
+            />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dowarron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
+ <LinearLayout
+     android:visibility="gone"
+     android:padding="5dp"
+     android:layout_alignParentBottom="true"
+     android:orientation="horizontal"
+     android:layout_margin="10dp"
+     android:id="@+id/keterangan"
+     android:clipToPadding="false"
+     android:weightSum="2"
+     android:background="@drawable/box"
+     android:elevation="40dp"
+     android:layout_width="match_parent"
+     android:layout_height="130dp">
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:layout_height="match_parent">
+         <TextView
+             android:text="Nama Toko"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:layout_marginTop="10dp"
+             android:text="Alamat Toko"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:layout_marginTop="10dp"
+             android:text="No Telp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+     </LinearLayout>
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:layout_height="match_parent">
+         <TextView
+             android:id="@+id/namatoko"
+             android:text="Nama Toko"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:id="@+id/alamattoko"
+             android:layout_marginTop="10dp"
+             android:text="Alamat Toko"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:id="@+id/notelp"
+             android:layout_marginTop="10dp"
+             android:text="Alamat Toko"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+     </LinearLayout>
+ </LinearLayout>
+</RelativeLayout>

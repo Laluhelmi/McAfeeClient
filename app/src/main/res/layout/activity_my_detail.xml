@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.hilmiproject.omdutz.mcafee.CustomerServiceActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:layout_weight="2.6"
+        android:layout_width="match_parent"
+        android:id="@+id/mapstatic"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_height="match_parent">
+    </fragment>
+    <ScrollView
+        android:clipToPadding="false"
+        android:elevation="40dp"
+        android:background="@drawable/garispinggir"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/jakarta"
+           android:textSize="20dp"
+           android:text="Jakarta-Office"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:textSize="13dp"
+           android:layout_marginLeft="5dp"
+           android:layout_below="@+id/jakarta"
+           android:text="Rukan Mangga Dua Mall Blok A no.16 Jakarta Pusat 10730"
+           android:layout_width="wrap_content"
+           android:id="@+id/jakartatext"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/Jogja"
+           android:layout_marginTop="9dp"
+           android:textSize="20dp"
+           android:layout_below="@id/jakartatext"
+           android:text="Yogyakarta - Office"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_marginLeft="5dp"
+           android:text="Ramai Mall Centra Computer Lt 2 Blok D 21-22 Jl.Ahmad Yani no.73, Yogyakarta 55122"
+           android:layout_below="@+id/Jogja"
+           android:id="@+id/textJogja"
+           android:textSize="13dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_marginTop="9dp"
+           android:text="Contact Info"
+           android:textSize="20dp"
+           android:id="@+id/netlp"
+           android:layout_below="@+id/textJogja"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_marginLeft="5dp"
+           android:layout_below="@+id/netlp"
+           android:text="Jakarta"
+           android:id="@+id/noJakarta"
+           android:textSize="18dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:text="(021)6124657"
+           android:id="@+id/n1"
+           android:layout_marginLeft="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/noJakarta"
+           />
+       <TextView
+           android:text="(021)6124658"
+           android:layout_marginLeft="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/n1"
+           android:id="@+id/n2"
+           />
+       <TextView
+           android:text="(021)6124659"
+           android:layout_marginLeft="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/n2"
+           android:id="@+id/n3"
+           />
+       <TextView
+           android:layout_marginLeft="5dp"
+           android:textSize="18dp"
+           android:text="Yogyakarta"
+           android:id="@+id/telpjogja"
+           android:layout_below="@+id/n3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/no4"
+           android:text="(0274)557016"
+           android:layout_below="@+id/telpjogja"
+           android:layout_marginLeft="15dp"
+           />
+
+       <RelativeLayout
+           android:id="@+id/pilihwa"
+           android:layout_marginTop="10dp"
+           android:background="@drawable/boxwa"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:layout_below="@+id/no4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:paddingBottom="5dp"
+               android:layout_marginTop="5dp"
+               android:layout_width="30dp"
+               android:id="@+id/gambarwa"
+               android:src="@drawable/waicon"
+               android:layout_height="30dp" />
+           <TextView
+               android:textColor="#ffffff"
+               android:layout_marginLeft="4dp"
+               android:layout_toRightOf="@id/gambarwa"
+               android:layout_marginTop="10dp"
+               android:text="Chat Via Whatsapp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+   </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

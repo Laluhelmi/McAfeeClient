@@ -1,0 +1,11 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AndroidLintLintBaseline" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintLocalSuppress" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintNamespaceTypo" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintStringFormatInvalid" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintSupportAnnotationUsage" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintUnknownId" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>

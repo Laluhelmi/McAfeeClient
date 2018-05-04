@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relateive"
+    tools:context="com.hilmiproject.omdutz.mcafee.Register2">
+
+    <ImageView
+        android:id="@+id/gambarregister2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:foregroundGravity="center"
+        android:src="@drawable/mcafee10"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"   />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout9"
+        android:layout_below="@+id/gambarregister2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:hint="Email"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="textEmailAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout12"
+        android:layout_below="@+id/layout9">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rekening"
+            android:inputType="number"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:hint="No.Rekening Harus BCA"
+            android:maxLength="10"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout10"
+        android:layout_below="@+id/layout12">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:maxLines="1"
+            android:hint="Password"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout11"
+        android:layout_below="@+id/layout10">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ulangpassword"
+            android:hint="Ulangi Password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout11"
+        android:id="@+id/relativeloading"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="Loading ..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tombolverifikasi"
+        android:layout_below="@+id/layout11"
+        android:text="Verifikasi"
+        android:background="@drawable/enable_color"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>

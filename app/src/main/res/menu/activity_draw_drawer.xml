@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/reward"
+            android:icon="@drawable/gift"
+            android:title="KIMS Reward" />
+        <item
+            android:id="@+id/scan"
+            android:icon="@drawable/scan"
+            android:title="Scan code" />
+        <item
+            android:id="@+id/lokasi"
+            android:icon="@drawable/map"
+            android:title="Lokasi Reseller" />
+        <item
+            android:id="@+id/histori"
+            android:icon="@drawable/riwaya"
+            android:title="Riwayat"/>
+    </group>
+
+    <item android:title="Help.">
+        <menu>
+            <item
+                android:id="@+id/FAQ"
+                android:icon="@drawable/faq"
+                android:title="FAQ" />
+            <item
+                android:id="@+id/service"
+                android:icon="@drawable/customer"
+                android:title="Customer Service" />
+
+        </menu>
+    </item>
+    <item android:title="Setting">
+        <menu>
+
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/exit">
+            </item>
+        </menu>
+    </item>
+
+</menu>

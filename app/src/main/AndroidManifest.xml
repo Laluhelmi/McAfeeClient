@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hilmiproject.omdutz.mcafee">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:icon="@mipmap/ic_launcher6"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher6"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <service android:name="com.hilmiproject.omdutz.mcafee.Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.hilmiproject.omdutz.mcafee.Firebase.TerimaPesan">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.MainActivity"
+            android:theme="@style/itu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.zxking.ZxkingCameraCostum"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.Login"
+            android:label="Login"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.Login"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.hilmiproject.omdutz.mcafee.Login" />
+
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.Draw"
+            android:label="McAfee Reward"
+            android:theme="@style/ini" />
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.Register"
+            android:label="Daftar Akun"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.Register"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.hilmiproject.omdutz.mcafee.Login" />
+
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.Register2"
+            android:label="Daftar Akun"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.Register"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.RegisterSukses"
+            android:label="Registrasi Sukses"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.RegisterSukses"
+            android:theme="@style/AppTheme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.CustomerServiceActivity"
+            android:label="Customer Service"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.CustomerServiceActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.Profil"
+            android:label="Profil"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.Profil"
+            android:theme="@style/ini" />
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.FaqActivity"
+            android:label="FAQ"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.FaqActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.Notif"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.Notif"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.NewRegister"
+            android:label="Registrasi"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.NewRegister"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.hilmiproject.omdutz.mcafee.FaqAnswer"
+            android:label="Answer"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.FaqAnswer"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.hilmiproject.omdutz.mcafee.FirstPage"
+            android:label="Kims Member"
+            android:parentActivityName="com.hilmiproject.omdutz.mcafee.FirstPage"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">#00ccff</item>
+        <item name="colorPrimaryDark">#00ccff</item>
+        <item name="colorAccent">#00ccff</item>
+        <item name="android:statusBarColor">@color/maroon</item>
+    </style>
+
+    <style name="toolbar_theme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">#ffffff</item>
+    </style>
+    <style name="coba" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">#00ccff</item>
+        <item name="colorPrimaryDark">#00ccff</item>
+        <item name="colorAccent">#000000</item>
+    </style>
+    <style name="coba2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">#660000</item>
+        <item name="colorPrimaryDark">#660000</item>
+        <item name="colorAccent">#ff1a1a</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:navigationBarColor">@color/maroon</item>
+        <item name="android:statusBarColor">@color/maroon</item>
+    </style>
+
+    <style name="ini" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/maroon</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="itu" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/maroon</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bounce</item>
+    </style>
+
+</resources>

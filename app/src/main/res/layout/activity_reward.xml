@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hilmiproject.omdutz.mcafee.Fragment.reward.Reward">
+<RelativeLayout
+    android:id="@+id/r1container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/noreward"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anda Belum Memiliki Reward"/>
+    <ListView
+        android:id="@+id/rewardsaya"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
